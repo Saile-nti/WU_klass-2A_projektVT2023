@@ -1,11 +1,12 @@
 *{
     padding: 0px;
-    margin: 0px;
+    margin: 1px;
+    background-color: bisque;
 }
 
 
 header{
-    background-color: rgb(113, 113, 255);
+   
     display: flex;
     justify-content: center;
 }
@@ -14,8 +15,10 @@ header h1{
     font-size: 5rem;
 }
 
+
+
 nav ul{
-    background-color: rgb(213, 172, 172);
+
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -54,5 +57,51 @@ nav ul li{
 }
 
 .rule p{
-    font-size: 28px;
+    font-size: 34px;
+}
+
+#whole{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 900px;
+    grid-template-areas: 
+    "wi bo"
+    "mo kn"
+    ;
+}
+.part_r{
+    display: grid;
+    margin: 5px;
+}
+
+#win{
+    grid-area: wi;
+}
+
+#board{
+    grid-area: bo;
+}
+
+#movement{
+    grid-area: mo;
+}
+
+#knight{
+    grid-area: kn;
+}
+
+img{
+    width: 470px;
+}
+
+#img_board{
+    height: 355px;
+}
+
+#queen{
+    height: 415px;
+}
+
+a{
+    text-decoration: none;
 }
