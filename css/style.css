@@ -6,7 +6,6 @@
 
 
 header{
-   
     display: flex;
     justify-content: center;
 }
@@ -30,30 +29,28 @@ nav ul li{
     font-size: 2.2rem;
 }
 
+
+
 #main{
-    display: grid;
-    grid-row: 300px 300px;
-    grid-column: 1fr 1fr;
-    grid-template-areas: 
-    "s1 s2"
-    "s3 s4"
-    ;
+    display: flex;
+    justify-content: space-between;
+    margin: 55px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    align-items: center;
 }
 
-#sec_1{
-    grid-area: s1;
+#right{
+    height: 110px;
 }
 
-#sec_2{
-    grid-area: s2;
+#left{
+    height: 110px;
 }
 
-#sec_3{
-    grid-area: s3;
-}
-
-#sec_4{
-    grid-area: s4;
+#pic_txt{
+    display: flex;
+    justify-content: center;
 }
 
 .rule p{
@@ -69,6 +66,15 @@ nav ul li{
     "mo kn"
     ;
 }
+
+#inter_whole{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 900px;
+    grid-template-areas: 
+    "wi bo";
+}
+
 .part_r{
     display: grid;
     margin: 5px;
