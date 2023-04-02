@@ -11,10 +11,8 @@ header{
 }
 
 header h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
-
-
 
 nav ul{
 
@@ -26,18 +24,33 @@ nav ul{
 }
 
 nav ul li{
-    font-size: 2.2rem;
+    font-size: 1.55rem;
 }
-
-
 
 #main{
     display: flex;
     justify-content: space-between;
-    margin: 55px;
+    margin: 4px;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     align-items: center;
+}
+
+#inter_whole{
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 900px;
+    grid-template-areas: 
+    "wi bo";
+}
+
+.whole{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #right{
@@ -48,6 +61,10 @@ nav ul li{
     height: 110px;
 }
 
+#pic{
+    height: 470px;
+}
+
 #pic_txt{
     display: flex;
     justify-content: center;
@@ -55,24 +72,6 @@ nav ul li{
 
 .rule p{
     font-size: 34px;
-}
-
-#whole{
-    display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 900px;
-    grid-template-areas: 
-    "wi bo"
-    "mo kn"
-    ;
-}
-
-#inter_whole{
-    display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 900px;
-    grid-template-areas: 
-    "wi bo";
 }
 
 .part_r{
@@ -106,4 +105,36 @@ img{
 
 a{
     text-decoration: none;
+}
+
+@media screen and (min-width:750px) {
+
+    header h1{
+        font-size: 3.6rem;
+    }
+
+    nav ul li{
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width:1050px) {
+    
+        #main{
+            margin:55px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    
+        .whole{
+            display: grid;
+            grid-column: 1fr 1fr;
+            grid-row: 900px;
+            grid-template-areas: 
+            "wi bo"
+            "mo kn"
+            ;
+        }
+        
+    
+    }
 }
