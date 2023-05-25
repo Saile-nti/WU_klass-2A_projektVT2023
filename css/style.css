@@ -4,6 +4,9 @@
     background-color: bisque;
 }
 
+img{
+    border-radius: 13px;
+}
 
 header{
     display: flex;
@@ -15,16 +18,38 @@ header h1{
 }
 
 nav ul{
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    list-style: none;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35px;
+    grid-template-areas: 
+    "l1 l2 l3 l4"
+    ;
 }
 
-nav ul li{
-    font-size: 1.55rem;
+body > nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#L1{
+    grid-area: l1;
+}
+
+#L2{
+    grid-area: l2;
+}
+
+#L3{
+    grid-area: l3;
+}
+
+#L4{
+    grid-area: l4;
+}
+
+nav h2{
+    font-size: 2.3rem;
 }
 
 #main{
@@ -38,13 +63,22 @@ nav ul li{
 
 #inter_whole{
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-row: 900px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 666px;
     grid-template-areas: 
     "wi bo";
 }
 
 .whole{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.whole_2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,6 +113,10 @@ nav ul li{
     margin: 5px;
 }
 
+.flexer{
+    display: flex;
+}
+
 #win{
     grid-area: wi;
 }
@@ -107,7 +145,7 @@ a{
     text-decoration: none;
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:890px) {
 
     header h1{
         font-size: 3.6rem;
@@ -116,8 +154,15 @@ a{
     nav ul li{
         font-size: 2rem;
     }
+    #ny img{
+        height: 420px;
+        width: 420px;
+    }
+    .flexer p{
+        font-size: 0.8rem;
+    }
 
-    @media screen and (min-width:1050px) {
+    @media screen and (min-width:1110px) {
     
         #main{
             margin:55px;
@@ -125,16 +170,22 @@ a{
             margin-bottom: 5px;
         }
     
+
         .whole{
             display: grid;
-            grid-column: 1fr 1fr;
-            grid-row: 900px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 525px;
             grid-template-areas: 
             "wi bo"
             "mo kn"
             ;
         }
-        
-    
+        .flexer p{
+            font-size: 1.2rem;
+        }
+        #ny img{
+            height: 430px;
+            width: 430px;
+        }
     }
 }
