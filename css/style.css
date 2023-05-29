@@ -97,14 +97,14 @@ nav h2{
 
 #right{
     height: 110px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 180px;
+    margin-bottom: 180px;
 }
 
 #left{
     height: 110px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 180px;
+    margin-bottom: 180px;
 }
 
 #pic_txt{
@@ -149,7 +149,7 @@ img{
 }
 
 #pic{
-    width: 80%;
+    width: 96%;
     height: auto;
 }
 
@@ -159,6 +159,10 @@ a{
 
 @media screen and (min-width:890px) {
 
+    #pic{
+        width: 100%;
+        height: auto;
+    }
     .rule p{
         font-size: 25px;
     }
